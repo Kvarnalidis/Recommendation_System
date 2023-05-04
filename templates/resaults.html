@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: #D1E5D8;
+  margin: 0;
+}
+
+ul {
+  font-size: 1.5em;
+  font-style:  italic;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #D1E2D8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+<ul>
+<li>
+    <a href="/food">Restaurants Recommendation</a>
+    <a href="/museum">Museums Recommendation</a>
+    <a href="/sight">Sights Recommendation</a>
+    <a href="/again">Return to home page</a>
+</li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2 style="text-align: center;font-size: 2em;background-color:#36C172; ">Reccomentation </h2>
+  <h3>{{name}}</h3>
+  <p><img src="{{image.url}}" style="width:350px;height:400px;"></p>
+  <p style="font-style:italic;font-size: 2em;">{{description}}</p>
+  <p style="font-style:italic;font-size: 2em;">{{location}}</p>
+  <p>{{score}}</p>
+  <p>{{input1}}/{{input2}}/{{input3}}</p>
+</div>
+</body>
+</html>
